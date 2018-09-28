@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '11.0'
+
+target ‘GitHubSearch2018’ do
+
+pod 'SwiftDate'
+pod 'SDWebImage'
+
+end

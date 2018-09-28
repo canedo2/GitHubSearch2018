@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Cg-Xo-F69">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ze5-06-yls">
+            <objects>
+                <navigationController id="9Cg-Xo-F69" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="z22-Nw-qfu">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vld-mN-d02" kind="relationship" relationship="rootViewController" id="lKc-YB-5O2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5I3-z1-OKj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1631" y="-170"/>
+        </scene>
+        <!--Search View Controller-->
+        <scene sceneID="Nfy-Jd-tLJ">
+            <objects>
+                <viewController id="Vld-mN-d02" customClass="SearchViewController" customModule="GitHubSearch2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qTd-Dc-QLA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eYh-wU-zZW">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" red="0.39328333735466003" green="0.93001085519790649" blue="0.18600401282310486" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="RepositoryCell" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RepositoryCell" rowHeight="80" id="lW7-qd-7NB" customClass="RepositoryCell" customModule="GitHubSearch2018" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="80"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lW7-qd-7NB" id="jZG-pX-3lz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flutter" translatesAutoresizingMaskIntoConstraints="NO" id="ROo-wb-UcT">
+                                                    <rect key="frame" x="16" y="8" width="64" height="64"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="ROo-wb-UcT" secondAttribute="height" multiplier="1:1" id="ZWP-41-oeE"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flutter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cb5-2L-IF7" userLabel="repositoryName">
+                                                    <rect key="frame" x="88" y="8" width="310" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Flutter makes it easy and fast to build beautiful mobile apps. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJg-bm-x20" userLabel="repositoryOverview">
+                                                    <rect key="frame" x="89" y="32" width="297" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="12"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsY-Ta-Iej" userLabel="CustomSeparator">
+                                                    <rect key="frame" x="88" y="79" width="326" height="1"/>
+                                                    <color key="backgroundColor" red="0.84111639220943757" green="0.84711366630174834" blue="0.86510548857868019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="QgZ-dI-wew"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="SsY-Ta-Iej" firstAttribute="leading" secondItem="cb5-2L-IF7" secondAttribute="leading" id="4TW-fH-b3D"/>
+                                                <constraint firstAttribute="bottom" secondItem="SsY-Ta-Iej" secondAttribute="bottom" id="55f-aK-dIZ"/>
+                                                <constraint firstItem="PJg-bm-x20" firstAttribute="top" secondItem="cb5-2L-IF7" secondAttribute="bottom" constant="4" id="AXw-5F-Bx1"/>
+                                                <constraint firstItem="PJg-bm-x20" firstAttribute="leading" secondItem="ROo-wb-UcT" secondAttribute="trailing" constant="9" id="Afx-D6-coV"/>
+                                                <constraint firstAttribute="bottom" secondItem="ROo-wb-UcT" secondAttribute="bottom" constant="8" id="SAz-B3-P4F"/>
+                                                <constraint firstItem="ROo-wb-UcT" firstAttribute="top" secondItem="jZG-pX-3lz" secondAttribute="top" constant="8" id="WhQ-bM-fbs"/>
+                                                <constraint firstItem="cb5-2L-IF7" firstAttribute="top" secondItem="jZG-pX-3lz" secondAttribute="top" constant="8" id="XsA-7c-ET8"/>
+                                                <constraint firstAttribute="trailing" secondItem="cb5-2L-IF7" secondAttribute="trailing" constant="16" id="bwV-Cl-tBc"/>
+                                                <constraint firstItem="ROo-wb-UcT" firstAttribute="leading" secondItem="jZG-pX-3lz" secondAttribute="leading" constant="16" id="d3e-ad-5ed"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="PJg-bm-x20" secondAttribute="bottom" constant="8" id="fgT-Ad-veX"/>
+                                                <constraint firstAttribute="trailing" secondItem="SsY-Ta-Iej" secondAttribute="trailing" id="gDu-z1-LUm"/>
+                                                <constraint firstItem="cb5-2L-IF7" firstAttribute="leading" secondItem="ROo-wb-UcT" secondAttribute="trailing" constant="8" id="v4D-IM-X6X"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="PJg-bm-x20" secondAttribute="trailing" constant="8" id="y1d-QK-q2V"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="repositoryImage" destination="ROo-wb-UcT" id="0Kg-s1-rcO"/>
+                                            <outlet property="repositoryName" destination="cb5-2L-IF7" id="bFK-Y4-DJI"/>
+                                            <outlet property="repositoryOverview" destination="PJg-bm-x20" id="Thg-x9-Aw1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vld-mN-d02" id="oZG-0L-He9"/>
+                                    <outlet property="delegate" destination="Vld-mN-d02" id="jq5-HK-7HV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="eYh-wU-zZW" secondAttribute="bottom" id="73L-A8-ljQ"/>
+                            <constraint firstItem="eYh-wU-zZW" firstAttribute="top" secondItem="dOB-Fa-9uB" secondAttribute="top" id="LHF-GF-tSC"/>
+                            <constraint firstItem="eYh-wU-zZW" firstAttribute="trailing" secondItem="dOB-Fa-9uB" secondAttribute="trailing" id="Zwk-l7-q67"/>
+                            <constraint firstItem="eYh-wU-zZW" firstAttribute="leading" secondItem="dOB-Fa-9uB" secondAttribute="leading" id="okc-zN-kbt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dOB-Fa-9uB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="leK-e7-I4U"/>
+                    <connections>
+                        <outlet property="tableView" destination="eYh-wU-zZW" id="wJD-S0-uSx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z1e-Sb-cfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-742.02898550724649" y="-170.08928571428569"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="QE8-JZ-4aJ">
+            <objects>
+                <viewController id="qH2-QA-FT8" customClass="DetailViewController" customModule="GitHubSearch2018" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8Y9-me-otr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="2bV-gC-AFM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0SJ-39-7Ih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="-170"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flutter" width="100" height="100"/>
+    </resources>
+</document>

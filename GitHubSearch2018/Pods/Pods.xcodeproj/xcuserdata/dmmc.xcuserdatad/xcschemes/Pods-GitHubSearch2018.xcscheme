@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1000"
+   LastUpgradeVersion = "0930"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6204F6F9A0520E5124C73D70E3B5704E"
-               BuildableName = "libPods-GitHubSearch2018.a"
+               BlueprintIdentifier = "FE74549D9AEA91EFD34F090218899DC0"
+               BuildableName = "Pods_GitHubSearch2018.framework"
                BlueprintName = "Pods-GitHubSearch2018"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
@@ -45,8 +45,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6204F6F9A0520E5124C73D70E3B5704E"
-            BuildableName = "libPods-GitHubSearch2018.a"
+            BlueprintIdentifier = "FE74549D9AEA91EFD34F090218899DC0"
+            BuildableName = "Pods_GitHubSearch2018.framework"
             BlueprintName = "Pods-GitHubSearch2018"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>

@@ -97,14 +97,15 @@
                                 <connections>
                                     <outlet property="dataSource" destination="Vld-mN-d02" id="oZG-0L-He9"/>
                                     <outlet property="delegate" destination="Vld-mN-d02" id="jq5-HK-7HV"/>
+                                    <outlet property="prefetchDataSource" destination="Vld-mN-d02" id="WJf-c6-xtq"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="eYh-wU-zZW" secondAttribute="bottom" id="73L-A8-ljQ"/>
-                            <constraint firstItem="eYh-wU-zZW" firstAttribute="top" secondItem="dOB-Fa-9uB" secondAttribute="top" id="LHF-GF-tSC"/>
                             <constraint firstItem="eYh-wU-zZW" firstAttribute="trailing" secondItem="dOB-Fa-9uB" secondAttribute="trailing" id="Zwk-l7-q67"/>
+                            <constraint firstItem="eYh-wU-zZW" firstAttribute="top" secondItem="dOB-Fa-9uB" secondAttribute="top" id="bqU-Et-hr6"/>
                             <constraint firstItem="eYh-wU-zZW" firstAttribute="leading" secondItem="dOB-Fa-9uB" secondAttribute="leading" id="okc-zN-kbt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dOB-Fa-9uB"/>
@@ -117,21 +118,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z1e-Sb-cfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-742.02898550724649" y="-170.08928571428569"/>
-        </scene>
-        <!--Detail View Controller-->
-        <scene sceneID="QE8-JZ-4aJ">
-            <objects>
-                <viewController id="qH2-QA-FT8" customClass="DetailViewController" customModule="GitHubSearch2018" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8Y9-me-otr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="2bV-gC-AFM"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0SJ-39-7Ih" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="132" y="-170"/>
         </scene>
     </scenes>
     <resources>

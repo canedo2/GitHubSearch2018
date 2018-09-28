@@ -28,7 +28,7 @@
         <!--Search View Controller-->
         <scene sceneID="Nfy-Jd-tLJ">
             <objects>
-                <viewController id="Vld-mN-d02" customClass="SearchViewController" customModule="GitHubSearch2018" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" id="Vld-mN-d02" customClass="SearchViewController" customModule="GitHubSearch2018" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qTd-Dc-QLA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -105,7 +105,7 @@
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="eYh-wU-zZW" secondAttribute="bottom" id="73L-A8-ljQ"/>
                             <constraint firstItem="eYh-wU-zZW" firstAttribute="trailing" secondItem="dOB-Fa-9uB" secondAttribute="trailing" id="Zwk-l7-q67"/>
-                            <constraint firstItem="eYh-wU-zZW" firstAttribute="top" secondItem="dOB-Fa-9uB" secondAttribute="top" id="bqU-Et-hr6"/>
+                            <constraint firstItem="eYh-wU-zZW" firstAttribute="top" secondItem="qTd-Dc-QLA" secondAttribute="top" constant="88" id="bqU-Et-hr6"/>
                             <constraint firstItem="eYh-wU-zZW" firstAttribute="leading" secondItem="dOB-Fa-9uB" secondAttribute="leading" id="okc-zN-kbt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dOB-Fa-9uB"/>

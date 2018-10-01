@@ -22,11 +22,13 @@ class SearchViewPresenter: SearchPresenterProtocol, GitHubServiceDelegate {
     }
 
     func performSearch(string: String?) {
-        self.gitHubService.requestRepositories(string: string)
+        self.gitHubService.requestRepositories(searchString: string)
     }
     
     func process(result: [NetRepository]?) {
-        self.searchController.insert(repositories: self.transformer.transform(from: result))
+        let processedRepos = self.transformer.transform(from: result)
+        DispatchQueue.main.async {
+            self.searchController.insert(repositories: processedRepos)
+        }
     }
-    
 }

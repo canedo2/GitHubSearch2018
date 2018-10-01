@@ -6,5 +6,6 @@ target ‘GitHubSearch2018’ do
 
 pod 'SwiftDate'
 pod 'SDWebImage'
+pod 'Alamofire'
 
 end

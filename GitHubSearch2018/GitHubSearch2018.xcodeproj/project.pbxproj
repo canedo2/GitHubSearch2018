@@ -177,7 +177,7 @@
 		B32C7F4D215E7E250088E2AD /* NetLayer */ = {
 			isa = PBXGroup;
 			children = (
-				B32C7F69215EA8E30088E2AD /* ServiceProtocols.swift */,
+				B380EA18216268DF006EC67B /* Protocols */,
 				B32C7F6D215EAC990088E2AD /* GitHubService.swift */,
 			);
 			path = NetLayer;
@@ -259,6 +259,14 @@
 				88A9386E07B634B4F430BE8C /* libPods-GitHubSearch2018.a */,
 			);
 			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		B380EA18216268DF006EC67B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B32C7F69215EA8E30088E2AD /* ServiceProtocols.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		DA52A1339BBDC1F379165B29 /* Frameworks */ = {
@@ -347,11 +355,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GitHubSearch2018/Pods-GitHubSearch2018-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftDate/SwiftDate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftDate.framework",
 			);

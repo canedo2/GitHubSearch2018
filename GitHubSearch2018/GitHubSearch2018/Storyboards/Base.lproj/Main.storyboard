@@ -28,7 +28,7 @@
         <!--Search View Controller-->
         <scene sceneID="Nfy-Jd-tLJ">
             <objects>
-                <viewController extendedLayoutIncludesOpaqueBars="YES" id="Vld-mN-d02" customClass="SearchViewController" customModule="GitHubSearch2018" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController extendedLayoutIncludesOpaqueBars="YES" definesPresentationContext="YES" id="Vld-mN-d02" customClass="SearchViewController" customModule="GitHubSearch2018" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qTd-Dc-QLA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -100,10 +100,22 @@
                                     <outlet property="prefetchDataSource" destination="Vld-mN-d02" id="WJf-c6-xtq"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BbX-gP-3ro">
+                                <rect key="frame" x="16" y="424" width="382" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="94h-oe-nIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="eYh-wU-zZW" secondAttribute="bottom" id="73L-A8-ljQ"/>
+                            <constraint firstItem="BbX-gP-3ro" firstAttribute="trailing" secondItem="dOB-Fa-9uB" secondAttribute="trailing" constant="-16" id="Nyx-Ny-iLg"/>
+                            <constraint firstItem="BbX-gP-3ro" firstAttribute="centerY" secondItem="qTd-Dc-QLA" secondAttribute="centerY" id="Vne-y2-KKx"/>
+                            <constraint firstItem="BbX-gP-3ro" firstAttribute="leading" secondItem="dOB-Fa-9uB" secondAttribute="leading" constant="16" id="XtN-9g-5wi"/>
                             <constraint firstItem="eYh-wU-zZW" firstAttribute="trailing" secondItem="dOB-Fa-9uB" secondAttribute="trailing" id="Zwk-l7-q67"/>
                             <constraint firstItem="eYh-wU-zZW" firstAttribute="top" secondItem="qTd-Dc-QLA" secondAttribute="top" constant="88" id="bqU-Et-hr6"/>
                             <constraint firstItem="eYh-wU-zZW" firstAttribute="leading" secondItem="dOB-Fa-9uB" secondAttribute="leading" id="okc-zN-kbt"/>
@@ -112,6 +124,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="leK-e7-I4U"/>
                     <connections>
+                        <outlet property="infoLabel" destination="BbX-gP-3ro" id="K2l-1c-A8e"/>
                         <outlet property="tableView" destination="eYh-wU-zZW" id="wJD-S0-uSx"/>
                     </connections>
                 </viewController>

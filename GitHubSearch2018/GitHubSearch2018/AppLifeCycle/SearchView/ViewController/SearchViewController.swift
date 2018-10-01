@@ -11,6 +11,7 @@ import UIKit
 class SearchViewController: UIViewController, SearchControllerProtocol {
     var searchPresenter: SearchPresenterProtocol?
     
+    @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var tableView: UITableView!
     var tableItems: [Repository]? = [Repository]()
     
@@ -28,6 +29,7 @@ class SearchViewController: UIViewController, SearchControllerProtocol {
         self.navigationItem.searchController?.searchBar.delegate = self
         self.navigationItem.hidesSearchBarWhenScrolling = false;
         
+        showInfoIfNeeded()
         configureTableView()
     }
     
@@ -35,8 +37,22 @@ class SearchViewController: UIViewController, SearchControllerProtocol {
         tableView.rowHeight = 80
     }
     
+    func showInfoIfNeeded() {
+        if let items_count = tableItems?.count, items_count > 0 {
+            infoLabel.text = ""
+        } else {
+            if let text = self.navigationItem.searchController?.searchBar.text, text != "" {
+                infoLabel.text = "We can't find repositories for your search."
+                
+            } else {
+                infoLabel.text = "Insert info so we can find the repositories you want."
+            }
+        }
+    }
+    
     func insert(repositories: [Repository]?) {
         tableItems = repositories
+        showInfoIfNeeded()
         tableView.reloadData()
     }
 }

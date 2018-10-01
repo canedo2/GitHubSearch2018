@@ -18,10 +18,10 @@ class RepositoryTransformer {
         var processedRepos = [Repository]()
         
         for repoToProcess in reposToProcess {
-            guard let url = URL(string: repoToProcess.userImageUrl) else {
+            guard let url = URL(string: repoToProcess.owner.avatar_url) else {
                 break
             }
-            processedRepos.append(Repository(name: repoToProcess.name, overview: repoToProcess.description, imageUrl: url))
+            processedRepos.append(Repository(name: repoToProcess.name, overview: repoToProcess.desc, imageUrl: url))
         }
         
         return processedRepos

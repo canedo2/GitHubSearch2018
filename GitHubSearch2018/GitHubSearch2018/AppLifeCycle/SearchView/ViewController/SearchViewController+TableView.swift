@@ -12,9 +12,11 @@ import UIKit
 
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailVC") as? DetailViewController {
             detailVC.item = tableItems?[indexPath.row]
             self.navigationController?.pushViewController(detailVC, animated: true)
+            
         }
     }
 }

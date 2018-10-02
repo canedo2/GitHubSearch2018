@@ -13,7 +13,7 @@ struct Repository {
     let overview:String
     let imageUrl:URL
     let user:String
-    let gitUrl:String
+    let gitUrl:URL
     let date:Date
     let stars:Int
     let forks:Int

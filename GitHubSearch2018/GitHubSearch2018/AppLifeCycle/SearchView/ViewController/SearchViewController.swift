@@ -31,6 +31,7 @@ class SearchViewController: UIViewController, SearchControllerProtocol {
         
         self.searchPresenter?.performSearch(string: "example")
         configureTableView()
+        self.showInfoIfNeeded()
     }
     
     func configureTableView() {

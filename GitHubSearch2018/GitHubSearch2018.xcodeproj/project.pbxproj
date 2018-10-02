@@ -23,6 +23,7 @@
 		B32C7F6C215EAB960088E2AD /* NetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32C7F6B215EAB960088E2AD /* NetRepository.swift */; };
 		B32C7F6E215EAC990088E2AD /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32C7F6D215EAC990088E2AD /* GitHubService.swift */; };
 		B32C7F71215EAE4C0088E2AD /* RepositoriesTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32C7F70215EAE4C0088E2AD /* RepositoriesTransformer.swift */; };
+		B356D63121642AC600AB1A7A /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356D63021642AC600AB1A7A /* LargeButton.swift */; };
 		BA90433467A630CF8EBB411B /* Pods_GitHubSearch2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106514E140B47A1167770987 /* Pods_GitHubSearch2018.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		B32C7F6B215EAB960088E2AD /* NetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetRepository.swift; sourceTree = "<group>"; };
 		B32C7F6D215EAC990088E2AD /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
 		B32C7F70215EAE4C0088E2AD /* RepositoriesTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTransformer.swift; sourceTree = "<group>"; };
+		B356D63021642AC600AB1A7A /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
 		B375E796215ED64C00C7540D /* GitHubSearch2018-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitHubSearch2018-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		F407F7B5A27C67059423884B /* Pods-GitHubSearch2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubSearch2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubSearch2018/Pods-GitHubSearch2018.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,6 +118,7 @@
 		B32C7F27215E76670088E2AD /* GitHubSearch2018 */ = {
 			isa = PBXGroup;
 			children = (
+				B356D62C2164289100AB1A7A /* Utils */,
 				B32C7F4A215E7D860088E2AD /* Models */,
 				B32C7F4D215E7E250088E2AD /* NetLayer */,
 				B32C7F4E215E7E570088E2AD /* AppLifeCycle */,
@@ -251,6 +254,14 @@
 				B32C7F70215EAE4C0088E2AD /* RepositoriesTransformer.swift */,
 			);
 			path = Transformers;
+			sourceTree = "<group>";
+		};
+		B356D62C2164289100AB1A7A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B356D63021642AC600AB1A7A /* LargeButton.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		B375E76D215ED2AC00C7540D /* Recovered References */ = {
@@ -406,6 +417,7 @@
 				B32C7F71215EAE4C0088E2AD /* RepositoriesTransformer.swift in Sources */,
 				B32C7F29215E76670088E2AD /* AppDelegate.swift in Sources */,
 				B32C7F68215EA6BB0088E2AD /* Repository.swift in Sources */,
+				B356D63121642AC600AB1A7A /* LargeButton.swift in Sources */,
 				B32C7F6E215EAC990088E2AD /* GitHubService.swift in Sources */,
 				B32C7F6A215EA8E30088E2AD /* ServiceProtocols.swift in Sources */,
 			);

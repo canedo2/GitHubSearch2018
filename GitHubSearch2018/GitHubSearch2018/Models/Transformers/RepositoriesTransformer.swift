@@ -21,7 +21,16 @@ class RepositoryTransformer {
             guard let url = URL(string: repoToProcess.owner.avatar_url) else {
                 break
             }
-            processedRepos.append(Repository(name: repoToProcess.name, overview: repoToProcess.desc, imageUrl: url))
+            
+            //TODO: Process Date
+            processedRepos.append(Repository(name: repoToProcess.name,
+                                             overview: repoToProcess.desc,
+                                             imageUrl: url, user: repoToProcess.owner.login,
+                                             gitUrl: repoToProcess.html_url,
+                                             date: Date(),
+                                             stars: repoToProcess.stargazers_count,
+                                             forks: repoToProcess.forks_count,
+                                             issues: repoToProcess.open_issues_count))
         }
         
         return processedRepos

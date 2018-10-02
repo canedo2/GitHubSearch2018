@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class RepositoryCell: UITableViewCell {
 
@@ -17,15 +18,15 @@ class RepositoryCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.repositoryName.text = "Flutter"
+        self.repositoryName.text = "Title"
         self.repositoryOverview.text = "Flutter makes it easy and fast to build beautiful mobile apps."
         self.repositoryImage.image = UIImage(named: "flutter")
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configure(title: String, overview: String, imageURL: URL) {
+        self.repositoryName.text = title
+        self.repositoryOverview.text = overview
+        self.repositoryImage.sd_setImage(with: imageURL, placeholderImage: UIImage(named: "placeholder"))
     }
-
+    
 }

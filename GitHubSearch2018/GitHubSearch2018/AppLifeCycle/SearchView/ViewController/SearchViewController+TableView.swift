@@ -11,7 +11,12 @@ import UIKit
 //import SDWebImage
 
 extension SearchViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let detailVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "detailVC") as? DetailViewController {
+            detailVC.item = tableItems?[indexPath.row]
+            self.navigationController?.pushViewController(detailVC, animated: true)
+        }
+    }
 }
 
 extension SearchViewController: UITableViewDataSource {
@@ -28,10 +33,9 @@ extension SearchViewController: UITableViewDataSource {
         }
         
         let item = tableItems![indexPath.row]
-        //cell.repositoryImage.sd_setImage(with: item.imageUrl, placeholderImage: UIImage(named: "github-image"))
-        cell.repositoryName.text = item.name
-        cell.repositoryOverview.text = item.overview
+        cell.configure(title: item.name, overview: item.overview, imageURL: item.imageUrl)
         return cell
+        
     }
     
 }

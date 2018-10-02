@@ -13,13 +13,9 @@ extension SearchViewController: UISearchControllerDelegate {
 
 }
 
-extension SearchViewController: UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        showInfoIfNeeded()
-    }
-    
+extension SearchViewController: UISearchBarDelegate {    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.searchPresenter?.performSearch(string: searchBar.text)
-        showInfoIfNeeded()
+        self.navigationItem.searchController?.isActive = false
     }
 }

@@ -11,14 +11,15 @@ import Foundation
 class SearchViewPresenter: SearchPresenterProtocol, GitHubServiceDelegate {
     
     var searchController: SearchControllerProtocol
-    var gitHubService: GitHubServiceProtocol!
+    var gitHubService: GitHubServiceProtocol
     var transformer = RepositoryTransformer()
     
-    init(controller: SearchControllerProtocol) {
+    init(controller: SearchControllerProtocol,service: GitHubServiceProtocol, transformer: RepositoryTransformer) {
         self.searchController = controller
-        defer {
-            self.gitHubService = GitHubService(delegate: self)
-        }
+        self.gitHubService = service
+        self.transformer = transformer
+        
+        self.gitHubService.delegate = self
     }
 
     func performSearch(string: String?) {

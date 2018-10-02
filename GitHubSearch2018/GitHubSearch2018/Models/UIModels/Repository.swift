@@ -12,4 +12,10 @@ struct Repository {
     let name:String
     let overview:String
     let imageUrl:URL
+    let user:String
+    let gitUrl:String
+    let date:Date
+    let stars:Int
+    let forks:Int
+    let issues:Int
 }

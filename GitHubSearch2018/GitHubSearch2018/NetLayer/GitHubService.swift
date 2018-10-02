@@ -14,12 +14,7 @@ class GitHubService: GitHubServiceProtocol {
     let baseUrlString = "https://api.github.com/search/repositories?q="
     let optionsString = "&sort=stars&order=desc"
     
-    var delegate: GitHubServiceDelegate
-    
-    init(delegate: GitHubServiceDelegate){
-        self.delegate = delegate
-    }
-    
+    var delegate: GitHubServiceDelegate?
     
     func requestRepositories(searchString: String?) {
         guard let searchString = searchString, searchString != "" else {
@@ -37,7 +32,7 @@ class GitHubService: GitHubServiceProtocol {
                         var itemsArray = [NetRepository]()
                         for item in items {
                             guard let item = item as? [String:Any] else {
-                                self.delegate.process(result: nil)
+                                self.delegate?.process(result: nil)
                                 return
                             }
                             if let netRepo = NetRepository(dictionary: item) {
@@ -45,12 +40,12 @@ class GitHubService: GitHubServiceProtocol {
                             }
                         }
                         if itemsArray.count > 0 {
-                            self.delegate.process(result: itemsArray)
-                        } else { self.delegate.process(result: nil)}
+                            self.delegate?.process(result: itemsArray)
+                        } else { self.delegate?.process(result: nil)}
                     }
                 } else {
                     print("Resquest unsuccessful: \(status)")
-                    self.delegate.process(result: nil)
+                    self.delegate?.process(result: nil)
                 }
             }
         }

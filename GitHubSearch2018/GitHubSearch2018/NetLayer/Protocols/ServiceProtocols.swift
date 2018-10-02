@@ -9,7 +9,7 @@
 import Foundation
 
 protocol GitHubServiceProtocol {
-    var delegate: GitHubServiceDelegate { get set }
+    var delegate: GitHubServiceDelegate? { get set }
     func requestRepositories(searchString:String?)
 }
 

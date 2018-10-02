@@ -9,7 +9,9 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    
+    var item: Repository?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

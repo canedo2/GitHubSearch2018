@@ -29,7 +29,7 @@ class SearchViewController: UIViewController, SearchControllerProtocol {
         self.navigationItem.searchController?.searchBar.delegate = self
         self.navigationItem.hidesSearchBarWhenScrolling = false;
         
-        self.searchPresenter?.performSearch(string: "google")
+        self.searchPresenter?.performSearch(string: "swift")
         configureTableView()
     }
     

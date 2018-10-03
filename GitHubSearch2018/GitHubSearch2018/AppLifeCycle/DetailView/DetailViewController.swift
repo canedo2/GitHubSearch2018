@@ -34,10 +34,12 @@ class DetailViewController: UIViewController {
         issuesLabel.text = item?.issues.description
         overviewLabel.text = item?.overview.description
         if let date = item?.date {
-            dateLabel.text = "\(date.shortMonthName) \(date.day), \(date.year)"
+            dateLabel.text = "\(date.shortMonthName) \(date.day), \(date.year)".capitalized
         }
         
         browserButton.configure()
+        userImage.layer.masksToBounds = true
+        userImage.layer.cornerRadius = 8.0
         
     }
 

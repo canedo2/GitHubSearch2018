@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "issues-count"; ObjectID = "AbM-O1-gOt"; */
+"AbM-O1-gOt.text" = "issues-count";
+
+/* Class = "UIButton"; normalTitle = "Open in Browser"; ObjectID = "DWs-ao-06G"; */
+"DWs-ao-06G.normalTitle" = "Abrir en navegador";
+
+/* Class = "UILabel"; text = "forks"; ObjectID = "JJI-4L-SL2"; */
+"JJI-4L-SL2.text" = "forks";
+
+/* Class = "UILabel"; text = "user"; ObjectID = "Lfn-cf-VhZ"; */
+"Lfn-cf-VhZ.text" = "user";
+
+/* Class = "UILabel"; text = "Cell repository overview"; ObjectID = "PJg-bm-x20"; */
+"PJg-bm-x20.text" = "Cell repository overview";
+
+/* Class = "UILabel"; text = "issues"; ObjectID = "QPd-t2-VZe"; */
+"QPd-t2-VZe.text" = "incidencias";
+
+/* Class = "UILabel"; text = "stars"; ObjectID = "Qmn-YD-4KK"; */
+"Qmn-YD-4KK.text" = "estrellas";
+
+/* Class = "UILabel"; text = "date"; ObjectID = "Wkd-pm-oZp"; */
+"Wkd-pm-oZp.text" = "date";
+
+/* Class = "UILabel"; text = "Cell repository name"; ObjectID = "cb5-2L-IF7"; */
+"cb5-2L-IF7.text" = "Cell repository name";
+
+/* Class = "UILabel"; text = "stars-count"; ObjectID = "glR-RC-4U6"; */
+"glR-RC-4U6.text" = "stars-count";
+
+/* Class = "UILabel"; text = "Detail repository overview"; ObjectID = "iAu-dH-rNx"; */
+"iAu-dH-rNx.text" = "Detail repository overview";
+
+/* Class = "UILabel"; text = "forks-count"; ObjectID = "s96-l1-Dmw"; */
+"s96-l1-Dmw.text" = "forks-count";

@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  GitHubSearch2018
+
+  Created by Diego Manuel Molina Canedo on 3/10/18.
+  Copyright © 2018 dmmc. All rights reserved.
+*/
+
+"SEARCH_TITLE" = "Repository search";
+"SEARCH_NOT_FOUND" = "No repositories found for your search.";

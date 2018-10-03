@@ -13,6 +13,6 @@ protocol GitHubServiceProtocol {
     func requestRepositories(searchString:String?)
 }
 
-protocol GitHubServiceDelegate {
+protocol GitHubServiceDelegate: class {
     func process(result: [NetRepository]?)
 }

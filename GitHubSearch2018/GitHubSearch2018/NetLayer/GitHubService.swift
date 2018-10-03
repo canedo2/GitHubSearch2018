@@ -14,7 +14,7 @@ class GitHubService: GitHubServiceProtocol {
     let baseUrlString = "https://api.github.com/search/repositories?q="
     let optionsString = "&sort=stars&order=desc"
     
-    var delegate: GitHubServiceDelegate?
+    weak var delegate: GitHubServiceDelegate?
     
     func requestRepositories(searchString: String?) {
         guard let searchString = searchString, searchString != "" else {

@@ -20,7 +20,9 @@ class RepositoryCell: UITableViewCell {
         
         self.repositoryName.text = "Title"
         self.repositoryOverview.text = "Flutter makes it easy and fast to build beautiful mobile apps."
-        self.repositoryImage.image = UIImage(named: "flutter")
+        self.repositoryImage.image = UIImage(named: "place-holder")
+        self.repositoryImage.layer.masksToBounds = true
+        self.repositoryImage.layer.cornerRadius = 8.0
     }
     
     func configure(title: String, overview: String, imageURL: URL) {

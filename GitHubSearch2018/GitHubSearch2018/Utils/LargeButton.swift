@@ -14,9 +14,7 @@ class LargeButton: UIButton {
     let highlightedBackgroundColor = UIColor.darkGray.cgColor
     
     func configure() {
-        self.layer.backgroundColor = UIColor(named: "custom-gray")?.cgColor
-        self.layer.cornerRadius = 4.0
-        self.setTitleColor(UIColor.white, for: .normal)
+        self.layer.cornerRadius = 8.0
     }
     
     override open func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

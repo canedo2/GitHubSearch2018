@@ -20,7 +20,7 @@ class SearchViewController: UIViewController, SearchControllerProtocol {
         
         self.searchPresenter = SearchViewPresenter(controller: self, service: GitHubService(), transformer: RepositoryTransformer())
         
-        self.title = "Repository search"
+        self.title = NSLocalizedString("SEARCH_TITLE", comment: "")
         self.navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.largeTitleDisplayMode = .always
         
@@ -29,9 +29,8 @@ class SearchViewController: UIViewController, SearchControllerProtocol {
         self.navigationItem.searchController?.searchBar.delegate = self
         self.navigationItem.hidesSearchBarWhenScrolling = false;
         
-        self.searchPresenter?.performSearch(string: "example")
+        self.searchPresenter?.performSearch(string: "google")
         configureTableView()
-        self.showInfoIfNeeded()
     }
     
     func configureTableView() {
@@ -42,7 +41,7 @@ class SearchViewController: UIViewController, SearchControllerProtocol {
         if let items_count = tableItems?.count, items_count > 0 {
             infoLabel.text = ""
         } else {
-            infoLabel.text = "No repositories found for your search."
+            infoLabel.text = NSLocalizedString("SEARCH_NOT_FOUND", comment: "")
         }
     }
     

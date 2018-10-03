@@ -24,6 +24,7 @@
 		B32C7F6E215EAC990088E2AD /* GitHubService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32C7F6D215EAC990088E2AD /* GitHubService.swift */; };
 		B32C7F71215EAE4C0088E2AD /* RepositoriesTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32C7F70215EAE4C0088E2AD /* RepositoriesTransformer.swift */; };
 		B356D63121642AC600AB1A7A /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B356D63021642AC600AB1A7A /* LargeButton.swift */; };
+		B356D6452164450500AB1A7A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B356D6472164450500AB1A7A /* Localizable.strings */; };
 		BA90433467A630CF8EBB411B /* Pods_GitHubSearch2018.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106514E140B47A1167770987 /* Pods_GitHubSearch2018.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,10 @@
 		B32C7F6D215EAC990088E2AD /* GitHubService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubService.swift; sourceTree = "<group>"; };
 		B32C7F70215EAE4C0088E2AD /* RepositoriesTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesTransformer.swift; sourceTree = "<group>"; };
 		B356D63021642AC600AB1A7A /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
+		B356D644216444FE00AB1A7A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B356D6462164450500AB1A7A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B356D6482164450700AB1A7A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B356D64C216447DD00AB1A7A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Main.strings; sourceTree = "<group>"; };
 		B375E796215ED64C00C7540D /* GitHubSearch2018-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitHubSearch2018-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		F407F7B5A27C67059423884B /* Pods-GitHubSearch2018.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubSearch2018.release.xcconfig"; path = "Pods/Target Support Files/Pods-GitHubSearch2018/Pods-GitHubSearch2018.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +131,7 @@
 				B32C7F2F215E76680088E2AD /* Assets.xcassets */,
 				B375E796215ED64C00C7540D /* GitHubSearch2018-Bridging-Header.h */,
 				B32C7F34215E76680088E2AD /* Info.plist */,
+				B356D6472164450500AB1A7A /* Localizable.strings */,
 				B32C7F49215E7B550088E2AD /* Supporting Files */,
 			);
 			path = GitHubSearch2018;
@@ -334,6 +340,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = B32C7F1C215E76670088E2AD;
 			productRefGroup = B32C7F26215E76670088E2AD /* Products */;
@@ -351,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B32C7F33215E76680088E2AD /* LaunchScreen.storyboard in Resources */,
+				B356D6452164450500AB1A7A /* Localizable.strings in Resources */,
 				B32C7F30215E76680088E2AD /* Assets.xcassets in Resources */,
 				B32C7F2E215E76670088E2AD /* Main.storyboard in Resources */,
 			);
@@ -430,6 +438,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B32C7F2D215E76670088E2AD /* Base */,
+				B356D64C216447DD00AB1A7A /* es */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -438,8 +447,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				B32C7F32215E76680088E2AD /* Base */,
+				B356D644216444FE00AB1A7A /* es */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B356D6472164450500AB1A7A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B356D6462164450500AB1A7A /* en */,
+				B356D6482164450700AB1A7A /* es */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -449,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -510,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
